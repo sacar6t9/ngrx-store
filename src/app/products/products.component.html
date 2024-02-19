@@ -1,0 +1,8 @@
+<div class="grid grid-cols-4 gap-5">
+
+    @for (item of products$|async; track $index) {
+        <app-prouct-card [product]="item" (handleAdd)="addItemToCart($event)" />
+        
+        }
+</div>
+
